@@ -19,7 +19,7 @@ const chalk = require('chalk')
 const { name } = require('./package.json')
 
 const isDev = process.env.NODE_ENV === 'development'
-const OUTPUT_PATH = 'root'
+const OUTPUT_PATH = 'docs'
 
 module.exports = {
   webpack: override(
@@ -100,6 +100,16 @@ module.exports = {
         summary: true,
         summaryContent: true,
       })
-    )
+    ),
+
+    !isDev &&
+      addWebpackPlugin(
+        new CopyWebpackPlugin([
+          {
+            from: path.resolve(__dirname, './build'),
+            to: path.resolve(__dirname, '../'),
+          },
+        ])
+      )
   ),
 }
