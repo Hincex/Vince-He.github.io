@@ -9,6 +9,7 @@ const {
   addWebpackPlugin,
   fixBabelImports,
 } = require('customize-cra')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const path = require('path')
 const paths = require('react-scripts/config/paths')
 
