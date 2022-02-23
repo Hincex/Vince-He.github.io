@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "./static/css/main.a106783d.css",
+    "main.js": "./main.a34dc313ebde9a3d2be7.js",
+    "manifest.js": "./manifest.3f47dd008326b242a8c0.js",
+    "static/js/787.b14a7f65.chunk.js": "./static/js/787.b14a7f65.chunk.js",
+    "index.html": "./index.html"
+  },
+  "entrypoints": [
+    "manifest.3f47dd008326b242a8c0.js",
+    "static/css/main.a106783d.css",
+    "main.a34dc313ebde9a3d2be7.js"
+  ]
+}
