@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://vincehx97.github.io",
   "dependencies": {
     "customize-cra": "^1.0.0",
     "react": "^17.0.2",
@@ -15,6 +15,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -46,6 +47,7 @@
     "@types/react-dom": "^17.0.11",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "5.1.1",
+    "gh-pages": "^3.2.3",
     "progress-bar-webpack-plugin": "^2.1.0",
     "terser-webpack-plugin": "^5.3.1"
   }
