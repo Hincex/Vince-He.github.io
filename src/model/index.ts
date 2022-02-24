@@ -1,5 +1,9 @@
 import { createContext } from 'react';
 
-const AppContext = createContext({});
+const AppContext = createContext<{
+  viewCount: number;
+}>({
+  viewCount: 0
+});
 
 export { AppContext };
