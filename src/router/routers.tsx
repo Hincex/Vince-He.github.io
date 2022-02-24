@@ -1,3 +1,4 @@
+import { ReactNode } from 'react';
 import Home from '../pages/Home';
 import Test from '../pages/Test';
 
@@ -5,7 +6,7 @@ interface IRouter {
   path: string;
   key: string;
   name: string;
-  element: any;
+  element: ReactNode;
   keepAlive?: boolean;
 }
 

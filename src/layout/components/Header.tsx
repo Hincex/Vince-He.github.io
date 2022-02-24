@@ -1,5 +1,6 @@
+import { useMemo } from 'react';
 // 插件
-import { Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { routers } from '@/router/routers';
 // 组件
 import Button from '@/components/Button';
@@ -7,17 +8,16 @@ import Button from '@/components/Button';
 import styles from '../index.module.scss';
 
 const Header: React.FC = () => {
-  const Logo = () => {
-    function goToHome() {
-      Navigate({ to: '/' });
-    }
-
-    return (
-      <div className={styles.header__logo} onClick={goToHome}>
-        <a>Logo</a>
-      </div>
-    );
-  };
+  const Logo = useMemo(
+    () => () => {
+      return (
+        <div className={styles.header__logo}>
+          <Link to='/'>{Math.random()}</Link>
+        </div>
+      );
+    },
+    []
+  );
 
   const Nav = () => {
     return (
@@ -25,9 +25,9 @@ const Header: React.FC = () => {
         {/* 导航 */}
         <div className={styles.header__nav__content}>
           {routers.map((item) => (
-            <div key={item.key} className={styles.header__nav__content__item}>
+            <Link key={item.key} to={item.path} className={styles.header__nav__content__item}>
               {item.name}
-            </div>
+            </Link>
           ))}
         </div>
         {/* 导航 END */}
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
   return (
     <div className={styles.header}>
       {/* 左侧Logo区域 */}
-      <Logo />
+      {Logo()}
       {/* 左侧Logo区域 END */}
 
       {/* 右侧Nav区域 */}
