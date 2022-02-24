@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     () => () => {
       return (
         <div className={styles.header__logo}>
-          <Link to='/'>{Math.random()}</Link>
+          <Link to='/'>Logo</Link>
         </div>
       );
     },

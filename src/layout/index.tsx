@@ -1,9 +1,13 @@
-// 组件
-import { AliveScope } from 'react-activation';
+// 插件
 import { HashRouter } from 'react-router-dom';
+import { AliveScope } from 'react-activation';
+// 组件
 import Content from './components/Content';
 import Header from './components/Header';
 
+/**
+ * 布局
+ */
 const LayoutView: React.FC = () => {
   return (
     <HashRouter>

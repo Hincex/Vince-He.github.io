@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
-import Home from '../pages/Home';
-import Test from '../pages/Test';
+// 页面
+import Home from '@/pages/Home';
+import About from '@/pages/About';
 
 interface IRouter {
   path: string;
@@ -18,13 +19,15 @@ export const routers: Array<IRouter> = [
     key: 'home',
     name: '首页',
     element: <Home />,
+    // element: lazy(() => import('@/pages/Home')),
     keepAlive: true
   },
   {
-    path: '/test',
-    key: 'test',
-    name: '测试',
-    element: <Test />,
+    path: '/about',
+    key: 'about',
+    name: '关于',
+    element: <About />,
+    // element: lazy(() => import('@/pages/Home')),
     keepAlive: true
   }
 ];

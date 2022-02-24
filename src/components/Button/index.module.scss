@@ -1,5 +1,5 @@
 .button {
-  @apply bg-purple-500 text-white rounded-full h-10 px-3 py-1 flex items-center justify-center transition-all;
+  @apply bg-purple-500 text-white rounded-full h-10 px-3 py-1 flex items-center justify-center transition-all select-none;
   &:hover {
     @apply bg-purple-400;
   }
