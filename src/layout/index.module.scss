@@ -1,0 +1,33 @@
+// 头部
+.header {
+  width: 100%;
+  line-height: 66px;
+  height: 66px;
+  @apply flex justify-between px-6;
+  &__nav,
+  &__logo {
+    @apply w-1/2 flex items-center justify-between;
+  }
+
+  &__nav {
+    &__content {
+      @apply flex justify-between;
+      &__item {
+        @apply font-medium cursor-pointer px-6;
+        &:hover {
+          @apply font-bold;
+        }
+      }
+    }
+
+    &__action {
+    }
+  }
+}
+
+// 内容
+.content {
+  width: 100%;
+  height: calc(100% - 66px);
+  @apply px-6 py-2;
+}

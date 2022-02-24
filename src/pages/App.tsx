@@ -1,14 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import RouterView from '../router'
-import './App.css'
+// 组件
+import LayoutView from '@/layout';
+import { AppContext } from '@/model';
 
-function App() {
+// APP入口
+export default () => {
   return (
-    <div className='App'>
-      <RouterView />
-    </div>
-  )
-}
-
-export default App
+    <AppContext.Provider value={{}}>
+      <LayoutView />
+    </AppContext.Provider>
+  );
+};
