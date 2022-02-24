@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 // 插件
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { routers } from '@/router/routers';
 // 组件
 import Button from '@/components/Button';
@@ -25,9 +25,15 @@ const Header: React.FC = () => {
         {/* 导航 */}
         <div className={styles.header__nav__content}>
           {routers.map((item) => (
-            <Link key={item.key} to={item.path} className={styles.header__nav__content__item}>
+            <NavLink
+              key={item.key}
+              to={item.path}
+              className={({ isActive }) =>
+                styles.header__nav__content__item + (isActive ? ` ${styles['header__nav__content__item--active']}` : '')
+              }
+            >
               {item.name}
-            </Link>
+            </NavLink>
           ))}
         </div>
         {/* 导航 END */}

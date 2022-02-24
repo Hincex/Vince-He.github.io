@@ -1,18 +1,6 @@
-.layout_header__F4Izz{width:100%;line-height:66px;height:66px;display:flex;justify-content:space-between;padding-left:1.5rem;padding-right:1.5rem}.layout_header__nav__c83Ue, .layout_header__logo__5-LhT{display:flex;width:50%;align-items:center;justify-content:space-between}.layout_header__nav__content__RYxjZ{display:flex;justify-content:space-between}.layout_header__nav__content__item__EsPxy{cursor:pointer;padding-left:1.5rem;padding-right:1.5rem;font-weight:500}.layout_header__nav__content__item__EsPxy:hover{font-weight:700}.layout_content__B3v\+O{width:100%;height:calc(100% - 66px);padding-left:1.5rem;padding-right:1.5rem;padding-top:0.5rem;padding-bottom:0.5rem}
-.Button_button__KM6IQ {
-    display: flex;
-    height: 2.5rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 9999px;
-    --tw-bg-opacity: 1;
-    background-color: rgb(34 197 94 / var(--tw-bg-opacity));
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity))
+.layout_header__F4Izz{width:100%;line-height:66px;height:66px;display:flex;justify-content:space-between;padding-left:1.5rem;padding-right:1.5rem}.layout_header__nav__c83Ue, .layout_header__logo__5-LhT{display:flex;width:50%;align-items:center;justify-content:space-between}.layout_header__nav__content__RYxjZ{display:flex;justify-content:space-between}.layout_header__nav__content__item__EsPxy{cursor:pointer;padding-left:1.5rem;padding-right:1.5rem;font-weight:600}.layout_header__nav__content__item__EsPxy:hover{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity))}.layout_header__nav__content__item--active__C4JqH{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity))}.layout_content__B3v\+O{width:100%;height:calc(100% - 66px);padding-left:1.5rem;padding-right:1.5rem;padding-top:0.5rem;padding-bottom:0.5rem}
+.Button_button__KM6IQ {display: flex;height: 2.5rem;align-items: center;justify-content: center;border-radius: 9999px;--tw-bg-opacity: 1;background-color: rgb(34 197 94 / var(--tw-bg-opacity));padding-left: 0.75rem;padding-right: 0.75rem;padding-top: 0.25rem;padding-bottom: 0.25rem;--tw-text-opacity: 1;color: rgb(255 255 255 / var(--tw-text-opacity))
+}.Button_button__KM6IQ:hover {--tw-bg-opacity: 1;background-color: rgb(74 222 128 / var(--tw-bg-opacity))
 }
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
