@@ -1,13 +1,30 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 // 插件
 import { Link, NavLink } from 'react-router-dom';
 import { routers } from '@/router/routers';
+import { useBattery, useSetState } from 'react-use';
 // 组件
 import Button from '@/components/Button';
 // 样式
 import styles from '../index.module.scss';
+// 类型
+import { BatteryState } from 'react-use/lib/useBattery';
 
 const Header: React.FC = () => {
+  const battery = useBattery();
+  const [state, setState] = useSetState<{ batteryState: BatteryState | undefined }>({
+    batteryState: undefined
+  });
+
+  useEffect(() => {
+    if (battery.isSupported && battery.fetched) {
+      setState({ batteryState: battery });
+    }
+  }, [battery]);
+
+  /**
+   * Logo区域
+   */
   const Logo = useMemo(
     () => () => {
       return (
@@ -19,6 +36,9 @@ const Header: React.FC = () => {
     []
   );
 
+  /**
+   * 导航菜单
+   */
   const Nav = () => {
     return (
       <div className={styles.header__nav}>
@@ -37,6 +57,8 @@ const Header: React.FC = () => {
           ))}
         </div>
         {/* 导航 END */}
+
+        {/* {state.batteryState?.level} */}
 
         <div className={styles.header__nav__action}>
           <Button>Contact Me</Button>
