@@ -1,6 +1,9 @@
 .button {
-  @apply bg-green-500 text-white rounded-full h-10 px-3 py-1 flex items-center justify-center;
+  @apply bg-purple-500 text-white rounded-full h-10 px-3 py-1 flex items-center justify-center transition-all;
   &:hover {
-    @apply bg-green-400;
+    @apply bg-purple-400;
+  }
+  &:active {
+    @apply ring ring-purple-400;
   }
 }

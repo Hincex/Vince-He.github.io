@@ -13,12 +13,12 @@
     &__content {
       @apply flex justify-between;
       &__item {
-        @apply font-semibold cursor-pointer px-6;
+        @apply font-semibold cursor-pointer px-6 transition-all;
         &:hover {
-          @apply text-blue-400;
+          @apply text-purple-400;
         }
         &--active {
-          @apply text-blue-500;
+          @apply text-purple-500;
         }
       }
     }
