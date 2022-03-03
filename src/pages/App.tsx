@@ -22,9 +22,12 @@ export default () => {
           viewCount: Number(data[index].data)
         });
 
-        query.set('id', data[index].objectId); // 需要修改的objectId
-        query.set('data', String(Number(data[index].data) + 1));
-        query.save();
+        // 防止本地测试刷新访问
+        if (process.env.NODE_ENV === 'production') {
+          query.set('id', data[index].objectId);
+          query.set('data', String(Number(data[index].data) + 1));
+          query.save();
+        }
       }
     });
   }

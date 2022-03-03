@@ -1,4 +1,6 @@
 import { useContext } from 'react';
+// 插件
+import CountTo from 'react-count-to'
 // 样式
 import styles from './index.module.scss';
 import { AppContext } from '@/model';

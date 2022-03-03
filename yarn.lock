@@ -9254,7 +9254,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.0.0, prop-types@^15.7.2:
+prop-types@^15.0.0, prop-types@^15.5.8, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -9448,6 +9448,13 @@ react-app-rewired@^2.2.1:
   integrity sha512-uFQWTErXeLDrMzOJHKp0h8P1z0LV9HzPGsJ6adOtGlA/B9WfT6Shh4j2tLTTGlXOfiVx6w6iWpp7SOC5pvk+gA==
   dependencies:
     semver "^5.6.0"
+
+react-count-to@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/react-count-to/-/react-count-to-0.12.0.tgz#28c6a2cc47b1d47c6019b35f02752ff109f3ca00"
+  integrity sha512-zckT3EvkGvdM65X7mIMVDXtv0/pYI2wpNH6iSEE7M14F2jO2IbCBTuJ+GCifkriY/l493CF9qCH5J4hiel9hYQ==
+  dependencies:
+    prop-types "^15.5.8"
 
 react-dev-utils@^12.0.0:
   version "12.0.0"
