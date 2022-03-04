@@ -35,5 +35,5 @@ module.exports = {
   // 根据显示样式决定 html 要不要折行
   htmlWhitespaceSensitivity: 'css',
   // 换行符使用 crlf
-  endOfLine: 'crlf',
-}
+  endOfLine: 'crlf'
+};
