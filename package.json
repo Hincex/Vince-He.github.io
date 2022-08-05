@@ -53,7 +53,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "pub": "react-app-rewired build && git add . && git commit -m 'publish' && git push",
+    "pub": "react-app-rewired build && git add . && git commit -m 'publish' --no-verify && git push",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install"
