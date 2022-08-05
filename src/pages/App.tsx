@@ -5,6 +5,7 @@ import { useSetState } from 'react-use';
 // 组件
 import LayoutView from '@/layout';
 import { AppContext } from '@/model';
+import './App.scss';
 
 // APP入口
 export default () => {
@@ -44,7 +45,21 @@ export default () => {
         viewCount: state.viewCount
       }}
     >
-      <LayoutView />
+      {/* <LayoutView /> */}
+      <div
+        style={{
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          fontWeight: 700,
+          fontSize: 36
+        }}
+        className='heart'
+      >
+        ❤陈切切是最可爱的❤
+      </div>
     </AppContext.Provider>
   );
 };
